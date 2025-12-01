@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Portfolio | The Analyst</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Background Matrix Effect -->
+    <canvas id="matrix"></canvas>
+
+    <div class="terminal">
+      <div class="pfp-container">
+    <img src="pfp/uFaSYI.jpg" alt="Profile Picture" class="pfp">
+    </div>
+
+
+        <!-- Typing Title -->
+        <h1 id="title" class="typing">> PORTFOLIO OF A CYBER ENGINEER</h1>
+
+        <!-- Tabs -->
+        <div class="nav">
+            <button onclick="openTab('about')">ABOUT</button>
+            <button onclick="openTab('skills')">SKILLS</button>
+            <button onclick="openTab('projects')">PROJECTS</button>
+            <button onclick="openTab('contact')">CONTACT</button>
+            <button onclick="openTab('languages')">LANGUAGES</button>
+
+        </div>
+
+        <!-- ABOUT -->
+        <div id="about" class="tab active">
+            <h2>> ABOUT ME</h2>
+            <p>Abderrahman Agharbi, an ENSATé student majoring in CS and embedded systems.</p>
+            
+        </div>
+
+        <!-- SKILLS -->
+        <div id="skills" class="tab">
+            <h2>> SKILL_SET</h2>
+            <ul class="skill-list">
+                <li data-skill="90">Adaptability</li>
+                <li data-skill="80">Critical thinking</li>
+                <li data-skill="85">??</li>
+                <li data-skill="75">??</li>
+                <li data-skill="70">??</li>
+            </ul>
+        </div>
+        <!-- LANGUAGES -->
+        <div id="languages" class="tab">
+           <h2>> LANGUAGES</h2>
+           <ul class="skill-list">
+              <li data-skill="100">English</li>
+              <li data-skill="90">Arabic</li>
+              <li data-skill="50">French</li>
+              
+           </ul>
+        </div>
+
+        
+
+        <!-- PROJECTS -->
+        <div id="projects" class="tab">
+            <h2>> PROJECTS</h2>
+            <div class="project">
+                <h3>🔹 Vulnerability Scanner</h3>
+                <p>A Python tool that scans hosts for weak open ports & outdated services.</p>
+            </div>
+            <div class="project">
+                <h3>🔹 Keylogger Analyzer</h3>
+                <p>Forensic tool that detects and traces malicious keylogger behavior.</p>
+            </div>
+            <div class="project">
+                <h3>🔹 Wi-Fi Attack Simulation Lab</h3>
+                <p>A controlled lab environment to practice WPA/WPA2 cracking techniques.</p>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="tab">
+            <h2>> CONTACT</h2>
+            <p>Email: <span class="glitch">aagharbi0@gmail.com</span></p>
+            
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
